@@ -35,18 +35,18 @@ discount = 2
 customer_name = input('Enter Customer Name : ')
 
 # Number of toys purchased by the customer
-quantity = ____('Enter Quantity of toys purchased by customer: ')
+quantity = input('Enter Quantity of toys purchased by customer: ')
 
 # typecast quantity from string to integer
-quantity = ____(quantity)
+quantity = int(quantity)
 
 # Calculate total amount spent by the customer before any discount
 total_amount = toy_price * quantity
 
 # Apply discount based on quantity purchased
-if quantity ___ 5:
+if quantity < 5:
     discount = 2
-elif quantity > 5 ____ quantity < 10:
+elif quantity > 5 and quantity < 10:
     discount = 5
 elif quantity > 10:
     discount = 10
@@ -55,9 +55,9 @@ else:
 
 # Apply tax only if quantity is more than 50
 if quantity > 50:
-    _____ = 2
+    product_tax = 2
 else:
-    product_tax = ____ # add zero tax for simplicity
+    product_tax = 0 # add zero tax for simplicity
 
 # Calculate discount and tax amounts
 discount_amount = (total_amount * discount) / 100

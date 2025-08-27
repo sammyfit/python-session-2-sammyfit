@@ -20,14 +20,14 @@ This program simulates an ATM PIN verification system using a `for` loop.
 correct_pin = "1234"
 
 # Use a for loop to allow the user up to 3 attempts to enter the correct PIN
-for attempt in range(1, ___):  # 3 attempts
+for attempt in range(1, 4):  # 3 attempts
     # Ask the user to enter their 4-digit PIN
     entered_pin = input("Enter your 4-digit ATM PIN: ")
     
     # Check if the entered PIN matches the correct PIN
-    if entered_pin == __________:
+    if entered_pin == correct_pin:
         print("Access Granted")
-        __________  # exit the loop
+        break  # exit the loop
     else:
         # If the attempt is less than 3, show how many attempts are left
         if attempt < 3:

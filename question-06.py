@@ -21,13 +21,13 @@ Discount Slabs:
 """
 
 # Get delivery distance and order amount
-distance = ____  # Enter distance in km (float)
-order_amount = ____  # Enter order amount (float)
+distance = float(input("Enter a valid distance in kms: "))  # Enter distance in km (float)
+order_amount = float(input("Enter amount of the order: ")) # Enter order amount (float)
 
 # Calculate delivery charge
 if distance <= 5:
     delivery_charge = 20
-elif ____:
+elif distance > 5 and distance <= 10:
     delivery_charge = 50
 else:
     print("Delivery Not Available for distance above 10 km.")
@@ -36,20 +36,20 @@ else:
 # Continue only if delivery is available
 if delivery_charge is not None:
     # Calculate discount
-    if order_amount ____= 1000:
+    if order_amount >= 1000:
         # provide 20% discount if order amount is more than 1000
         discount = (order_amount * 20) / 100
     elif order_amount >= 500:
 
-        discount = (____ * 10) / 100
+        discount = (order_amount * 10) / 100
     else:
         discount = 0
 
     # Calculate final amount
-    total_amount = ____ + delivery_charge - discount
+    total_amount = order_amount + delivery_charge - discount
 
     # Display results
-    print("\nOrder Amount: ₹", ____)
+    print("\nOrder Amount: ₹", order_amount)
     print("Delivery Charge: ₹", delivery_charge)
-    print("Discount Applied: ₹", ____)
+    print("Discount Applied: ₹", discount)
     print("Total Payable Amount: ₹", total_amount)

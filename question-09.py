@@ -16,22 +16,22 @@ If the user enters 'yes', it repeats the calculation process.
 If the user enters 'no', the program quits with a goodbye message.
 """
 
-____ True:
+while True:
     # Get user input and convert to integers
     num1 = int(input("Enter the first number: "))
     num2 = int(input("Enter the second number: "))
 
     # Choose operation
-    operation = ____("Enter operation (+, -, *, /): ")
+    operation = input("Enter operation (+, -, *, /): ")
 
     # Perform operation using if-elif-else
     if operation == '+':
-        result = ____ + num2
+        result = num1 + num2
         print("Result:", result)
     elif operation == '-':
         result = num1 - num2
         print("Result:", result)
-    elif operation ____ '*':
+    elif operation == '*':
         result = num1 * num2
         print("Result:", result)
     elif operation == '/':
@@ -45,6 +45,6 @@ ____ True:
 
     # Ask user whether to continue
     choice = input("Do you want to continue? (yes/no): ").lower()
-    ____ choice != 'yes':
+    if choice != 'yes':
         print("Thank you for using the calculator. Goodbye!")
-        _____
+        break

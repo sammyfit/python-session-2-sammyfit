@@ -15,17 +15,17 @@ get user user input using input() function and covert that numbers into integers
 
 """
 
-num1 = ____  # Enter first number
-num2 = ____  # Enter second number
-operation = ____  # Enter '+', '-', '*', or '/'
+num1 = int(input("First Number: "))  # Enter first number
+num2 = int(input("Second Number: "))  # Enter second number
+operation = input("Choose Operator -> Enter '+', '-', '*', or '/'")  # Enter '+', '-', '*', or '/'
 
-if operation  ___ '+':
-    print("Result:", num1 ___ num2)
+if operation  == '+':
+    print("Result:", num1 + num2)
 elif operation == '-':
-    ___("Result:", num1 - num2)
-___ operation == '*':
+    print("Result:", num1 - num2)
+elif operation == '*':
     print("Result:", num1 * num2)
-elif operation == '___' and num2 != 0:
+elif operation == '/' and num2 != 0:
     print("Result:", num1 / num2)
 else:
     print("Invalid Operation or Division by Zero")

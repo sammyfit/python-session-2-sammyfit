@@ -3,13 +3,13 @@ cart_items = ["apple", "chocolate", "milk", "out-of-stock", "bread", "alcohol", 
 
 print("🛒 Processing your cart...")
 
-for item in __________:  # Loop through cart items
+for item in cart_items:  # Loop through cart items
     if item == "out-of-stock":
-        __________  # Skip this item
+        continue  # Skip this item
     
     if item == "alcohol":
         print("⚠️ Restricted item detected:", item)
         print("Checkout stopped!")
-        __________  # Stop the loop
+        break  # Stop the loop
 
     print("✔️ Added to final list:", item)

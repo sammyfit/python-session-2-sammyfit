@@ -24,15 +24,15 @@ Instructions:
 """
 
 # Get employee details
-employee_name = ____  # Input employee name
-annual_salary = ____  # Input annual salary (float)
+employee_name = input("Enter Employee name ? ")  # Input employee name
+annual_salary = int(input("Enter Employee salary ? "))  # Input annual salary (float)
 
 # Determine tax slab and calculate tax
 if annual_salary <= 250000:
     tax_rate = 0
-elif annual_salary ____ 250000 and annual_salary <= 500000:
+elif annual_salary > 250000 and annual_salary <= 500000:
     tax_rate = 5
-elif annual_salary ____ 500000 ___ annual_salary <= 1000000:
+elif annual_salary > 500000 and annual_salary <= 1000000:
     tax_rate = 20
 else:
     tax_rate = 30

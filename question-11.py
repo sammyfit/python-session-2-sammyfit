@@ -21,12 +21,12 @@ even_count = 0
 odd_count = 0
 
 # Loop through numbers from 1 to 100
-for ___ in range(___, 101):  
+for num in range(1, 101):  
     # Check if the number is even
     if num % 2 == 0:
-        even_count ___= 1  # Increase even counter
+        even_count += 1  # Increase even counter
     else:
-        _____ += 1   # Increase odd counter
+        odd_count += 1   # Increase odd counter
 
 # Display the result
 print("Even Count:", even_count)

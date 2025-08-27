@@ -20,9 +20,9 @@ veg_menu = ['paneer', 'dal', 'chole']
 non_veg_menu = ['chicken', 'fish', 'mutton']
 
 # Check food type and display result
-if user_choice ____ veg_menu:
+if user_choice in veg_menu:
     print("User is Vegetarian.")
-elif ____ in ____:
+elif user_choice in non_veg_menu:
     print("User is Non-Vegetarian.")
 else:
     print("Invalid choice, please try again.")
